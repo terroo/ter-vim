@@ -1,11 +1,26 @@
 " Define o grupo de sintaxe básico
 function! Terlang()
-  syntax keyword terKeyword if else while return set auto class output out exec for
+  syntax keyword terKeyword version
+
+  " Palavras-chave de controle de fluxo
+  syntax keyword terControl if else while for return
+  
+  " Palavras-chave relacionadas a declarações
+  syntax keyword terDeclaration set auto class
+  
+  " Funções de saída
+  syntax keyword terOutput output out exec
+
+
   syntax match terComment "//.*"
   syntax match terString "\".*\""
 
   " Liga os grupos de sintaxe a cores do Vim
   highlight link terKeyword Keyword
+  highlight link terControl Conditional
+  highlight link terDeclaration Type
+  highlight link terOutput Function
+
   highlight link terComment Comment
   highlight link terString String
 
