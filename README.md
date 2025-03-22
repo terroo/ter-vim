@@ -16,6 +16,8 @@ use 'terroo/ter-vim'
 ```
 
 + [Vim-Snippets](https://github.com/honza/vim-snippets)
+<!--
 ```bash
 cp ter-vim/snippets/ter.snippets ~/.vim/plugged/vim-snippets/snippets/ter.snippets
 ```
+-->
