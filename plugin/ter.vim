@@ -1,6 +1,6 @@
 " Define o grupo de sintaxe básico
 function! Terlang()
-  syntax keyword terKeyword version
+  syntax keyword terKeyword version output out exec
 
   " Palavras-chave de controle de fluxo
   syntax keyword terControl if else while for return
@@ -9,7 +9,7 @@ function! Terlang()
   syntax keyword terDeclaration set auto class
   
   " Funções de saída
-  syntax keyword terOutput output out exec
+  "syntax keyword terOutput output out exec
 
 
   syntax match terComment "//.*"
@@ -19,7 +19,7 @@ function! Terlang()
   highlight link terKeyword Keyword
   highlight link terControl Conditional
   highlight link terDeclaration Type
-  highlight link terOutput Function
+  "highlight link terOutput Function
 
   highlight link terComment Comment
   highlight link terString String
